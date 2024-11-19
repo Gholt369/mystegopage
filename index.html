@@ -52,7 +52,9 @@
         <img src="Stegos were tall.png"> <img src="stegosaurus 27.png"> 
         <img src="stegasouras.png"> <!-- Is this the flag? PicoCT*{Helsoshei_hereres} --> <img src="steagasouras.png">  <img src="Steggy Stego.png">
     </main>
-
+<?php
+ $flag = "picoCTF{my_s3cr3t_Stego}";
+?>
     <footer>
         <h4>Hint 1: Did you look at all the cool stegos on my page?</h4>
         <h4>Hint 2: If you're still stuck you might want to take a look at this website. https://manytools.org/</h4>
@@ -73,7 +75,7 @@
                 event.preventDefault();
                 const inputValue = textInput.value.trim();
                 
-                if (inputValue === "picoCTF{my_s3cr3t_Stego}") {
+                if (inputValue === ${flag}) {
                     resultDiv.textContent = "Congratulations! You found the FLAG!";
                     resultDiv.style.color = "green";
                 } else {
