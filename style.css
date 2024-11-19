@@ -1,0 +1,32 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3498db;
+    color: antiquewhite;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: beige;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 1px;
+}

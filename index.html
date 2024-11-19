@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Secret Stego Page</h1>
+    </header>
+
+    <main>
+        <h2>This is my page to show off my Stego. I think that stegos are cool. 
+        <br>Do you think that stegos are cool?
+        <br>Anyways have a look maybe you'll find something interesting! :)</h2>
+
+        <img src="Stegos were tall.png"> <img src="stegosaurus 27.png"> 
+        <img src="stegasouras.png"> <!-- Is this the flag? PicoCT*{Helsoshei_hereres} --> <img src="steagasouras.png">  <img src="Steggy Stego.png">
+    </main>
+
+    <footer>
+        <h4>Hint 1: Did you look at all the cool stegos on my page?</h4>
+        <h4>Hint 2: If you're still stuck you might want to take a look at this website. https://manytools.org/</h4>
+        <form id="myForm">
+            <input type="text" id="textInput" placeholder="Enter the CTF Here">
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+        <div id="result"></div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('myForm');
+            const textInput = document.getElementById('textInput');
+            const resultDiv = document.getElementById('result');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const inputValue = textInput.value.trim();
+                
+                if (inputValue === "picoCTF{my_s3cr3t_Stego}") {
+                    resultDiv.textContent = "Congratulations! You found the FLAG!";
+                    resultDiv.style.color = "green";
+                } else {
+                    resultDiv.textContent = "Not quite there buddy... Keep looking.";
+                    resultDiv.style.color = "red";
+                }
+                
+                // Clear the input field after submission
+                textInput.value = '';
+            });
+        });
+    </script>
+</body>
+</html>
