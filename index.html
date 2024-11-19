@@ -50,11 +50,9 @@
         <br>Anyways have a look maybe you'll find something interesting! :)</h2>
 
         <img src="Stegos were tall.png"> <img src="stegosaurus 27.png"> 
-        <img src="stegasouras.png"> <!-- Is this the flag? PicoCT*{Helsoshei_hereres} --> <img src="steagasouras.png">  <img src="Steggy Stego.png">
+        <img src="stegasouras.png"> <!-- Is this the flag? PicoCTF{Helsoshei_hereres} --> <img src="steagasouras.png">  <img src="Steggy Stego.png">
     </main>
-<?php
- $flag = "picoCTF{my_s3cr3t_Stego}";
-?>
+    
     <footer>
         <h4>Hint 1: Did you look at all the cool stegos on my page?</h4>
         <h4>Hint 2: If you're still stuck you might want to take a look at this website. https://manytools.org/</h4>
@@ -66,27 +64,30 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('myForm');
-            const textInput = document.getElementById('textInput');
-            const resultDiv = document.getElementById('result');
+  const ᐃᐅᐊᐃᐁ = 'Y0dsamIwTlVSbnR0ZVY5ek0yTnlNM1JmVTNSbFoyOTk=';
+  function 𐌰𐌱𐌲𐌳(𐌴𐌵𐌶𐌷) {
+    return atob(atob(𐌴𐌵𐌶𐌷));
+  }
 
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const inputValue = textInput.value.trim();
-                
-                if (inputValue === ${flag}) {
-                    resultDiv.textContent = "Congratulations! You found the FLAG!";
-                    resultDiv.style.color = "green";
-                } else {
-                    resultDiv.textContent = "Not quite there buddy... Keep looking.";
-                    resultDiv.style.color = "red";
-                }
-                
-                // Clear the input field after submission
-                textInput.value = '';
-            });
-        });
-    </script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const ᚠᚡᚢᚣ = document.getElementById('myForm');
+    const ᚤᚥᚦᚧ = document.getElementById('textInput');
+    const ᚨᚩᚪᚫ = document.getElementById('result');
+    
+    ᚠᚡᚢᚣ.addEventListener('submit', function(ᚬᚭᚮᚯ) {
+      ᚬᚭᚮᚯ.preventDefault();
+      const ᚰᚱᚲᚳ = ᚤᚥᚦᚧ.value.trim();
+      const ᚴᚵᚶᚷ = 𐌰𐌱𐌲𐌳(ᐃᐅᐊᐃᐁ);
+      if (ᚰᚱᚲᚳ === ᚴᚵᚶᚷ) {
+        ᚨᚩᚪᚫ.textContent = 'Congratulations! You found the FLAG!';
+        ᚨᚩᚪᚫ.style.color = 'green';
+      } else {
+        ᚨᚩᚪᚫ.textContent = 'Not quite there buddy... Keep looking.';
+        ᚨᚩᚪᚫ.style.color = 'red';
+      }
+      ᚤᚥᚦᚧ.value = '';
+    });
+  });
+</script>
 </body>
 </html>
